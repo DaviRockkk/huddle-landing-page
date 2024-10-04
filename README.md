@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Huddle landing page]()
+- Live Site URL: [Huddle landing page](https://davirockkk.github.io/huddle-landing-page/)
 
 ### Built with
 
