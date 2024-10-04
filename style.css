@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--Very-Dark-Cyan);
+}
+
+main {
+  background-image: url(images/bg-hero-desktop.svg)
+}
+
+.hero__h1 {
+  font-weight: 600;
+}
+
+.header, .hero {
+  display: flex;
+  font-family: poppins, sans-serif;
+  padding-block: 2.6rem;
+  padding-inline: 2.6rem;
+}
+
+.header {
+  padding-inline: 4.8rem;
+}
+
+.header__icon {
+  width: 150px;
+}
+
+.header__btn {
+  margin-left: auto;
+  font-size: 1.2rem;
+  padding: 0.4em 2.4em;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  color: #09232B;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.header__btn:hover {
+  cursor: pointer;
+  background-color: var(--Very-Pale-Cyan);
+  color: #87919B;
+}
+
+.hero {
+  align-items: center;
+  padding-inline: 7rem;
+  margin-inline: auto;
+  max-width: 1680px;
+  gap: 60px;
+}
+
+.hero__h1 {
+  margin-bottom: 3rem;
+  font-size: 2.8rem;
+}
+
+.hero__p {
+  font-size: 1.13rem;
+  max-width: 70ch;
+  color: #244146b9;
+}
+
+/* HERO LEFT */
+.hero__left {
+  align-items: center;
+  max-width: 580px;
+}
+
+/* HERO RIGHT */
+.hero__right__img {
+  max-width: 600px;
+}
+
+.hero__btn {
+  border: none;
+  background-color: var(--Pink);
+  color: white;
+  font-size: 1.1rem;
+  padding-inline: 3.5rem;
+  padding-block: 0.9rem;
+  border-radius: 50px;
+  margin-top: 30px;
+  transition: background-color 0.2s;
+}
+
+.hero__btn:hover {
+  cursor: pointer;
+  background-color: #FF9BDB;
+}
+
+
+/* cards */
+.card__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  gap: 80px;
+  padding: 100px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.card__content {
+  flex: 1;
+  margin-inline: 80px;
+  min-width: 260px;
+}
+
+.card__title {
+  font-size: 2.1em;
+  margin-bottom: 20px;
+  color: #05232B;
+}
+
+.card__description {
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #979A9E;
+}
+
+.card__image {
+  max-width: 500px;
+}
+
+.card__image img {
+  max-width: 100%;
+}
+
+/* hover effect */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* call card */
+.callCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: -150px;
+  max-width: 800px;
+  height: 250px;
+  margin-inline: auto;
+  left: 0;
+  right: 0;
+  border-radius: 12px;
+}
+
+.callCard__h2 {
+  font-size: 2rem;
+  font-family: 'Open Sans';
+  margin-bottom: 40px;
+}
+
+.callCard__btn {
+  border: none;
+  padding-block: 25px;
+  padding-inline: 100px;
+  background-color: var(--Pink);
+  color: white;
+  border-radius: 90px;
+  transition: background-color 0.2s;
+}
+
+.callCard__btn:hover {
+  background-color: #FF9BDB;
+}
+
+/* footer */
+footer {
+  background-color: var(--Very-Dark-Cyan);
+  height: 78vh;
+  position: relative;
+  margin-top: 100px;
+}
+
+.footer__content {
+  color: white;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 200px;
+  padding-inline: 20px;
+}
+
+.footer__logo img{
+  fill: white;
+  margin-bottom: 35px;
+}
+
+.footer__info__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer__info__container span {
+  color: var(--Very-Pale-Cyan);
+}
+
+.footer__info1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__info2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__info4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer__info2 span:hover, .footer__info3 span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer__item span {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  margin-left: 16px;
+  max-width: 30ch;
+}
+
+.footer__social {
+  display: flex;
+  list-style: none;
+}
+
+.footer__social li {
+  margin-right: 20px;
+}
+
+.footer__social li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  text-decoration: none;
+  transition: color 0.4s, border 0.3s;
+}
+
+.footer__social li a:hover {
+  color: var(--Pink);
+  border: 1px solid var(--Pink);
+}
+
+.attribution, .attribution a {
+  color: white;
+  text-decoration: none;
+  margin-top: 40px;
+  font-size: 10px;
+}
+
+.footer__copyright {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-block: 10px 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-inline: 3rem;
+    gap: 50px
+  }
+
+  .hero__right__img {
+    width: 100%;
+  }
+
+  .hero__right {
+    max-width: 600px;
+  }
+
+  .hero__left {
+    max-width: 330px;
+    width: 90%;
+  }
+
+  .hero__h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero__p {
+    font-size: 1.13rem;
+  }
+
+  /* cards */
+  .card__content {
+    min-width: 200px;
+    font-size: 13px;
+    margin-inline: 50px;
+  }
+
+  .card__image {
+    max-width: 300px;
+    min-width: 200px;
+  }
+
+  /* call card */
+  .callCard {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card__content {
+    min-width: 135px;
+    margin-inline: 20px;
+  }
+
+  .card__image {
+    max-width: 200px;
+    min-width: 110px;
+  }
+
+  /* call card */
+  .callCard {
+    max-width: 550px;
+    font-size: 0.9rem;
+  }
+
+  .callCard__h2 {
+    font-size: 1.7rem;
+  }
+
+  /* footer */
+  footer {
+    height: 85vh;
+  }
+
+  .footer__social {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .callCard {
+    max-width: 440px;
+    max-height: 190px;
+    top: -120px;
+  }
+
+  .callCard__h2 {
+  font-size: 1.4rem;
+  }
+  
+  .callCard__btn {
+    padding-inline: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    background-image: url(images/bg-hero-mobile.svg);
+  }
+
+  .header {
+    padding-inline: 1.7rem;
+  }
+
+  .header__icon img {
+    width: 150px;
+    padding-top: 0.3rem;
+  }
+
+  .header__btn {
+    width: 150px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+  flex-direction: column;
+  }
+
+  .hero__h1 {
+    margin-bottom: 1.8rem;
+  }
+
+  .hero__left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__btn {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* cards */
+  .card__container {
+    padding: 45px;
+    text-align: center;
+  }
+  
+  .card {
+    flex-direction: column;
+
+  }
+
+  .card__content {
+    font-size: 15px;
+  }
+
+  /* call card */
+  .callCard {
+    max-width: 380px;
+  }
+
+
+  /* footer */
+  footer {
+    height: 126vh;
+  }
+
+  .footer__info__container {
+    flex-direction: column;
+  }
+
+  .footer__info4 {
+    justify-content: center;
+  }
+
+  .footer__social {
+    flex-direction: row;
+  }
+}
