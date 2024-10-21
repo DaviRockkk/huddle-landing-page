@@ -207,6 +207,7 @@ main {
   background-color: var(--Pink);
   color: white;
   border-radius: 90px;
+  cursor: pointer;
   transition: background-color 0.2s;
 }
 
